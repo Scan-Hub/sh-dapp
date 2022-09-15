@@ -1,0 +1,61 @@
+@import "./generic.scss";
+
+.sh_btn {
+  @extend.text--regular;
+  display: flex;
+  justify-content: center;
+  padding: 4px 8px;
+  min-height: 32px;
+  border-radius: 6px;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+
+  & > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.btn_icon {
+    width: 32px;
+    padding: 0;
+    background-color: #191b2a;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.btn_primary {
+    background-color: #00af71;
+
+    &:hover {
+      background-color: darken(#00af71, 10);
+      color: darken(#fff, 20);
+    }
+  }
+
+  &.btn_secondary {
+    background-color: #65688133;
+    color: #adb2db;
+    &:hover {
+      background-color: darken(#65688133, 10);
+      color: darken(#adb2db, 20);
+    }
+  }
+
+  &.btn_error {
+    background-color: #ff4d4f;
+
+    &:hover {
+      background-color: darken(#ff4d4f, 10);
+      color: darken(#fff, 20);
+    }
+  }
+
+  &.btn_orange {
+    background-color: #e26b45;
+
+    &:hover {
+      background-color: darken(#e26b45, 10);
+      color: darken(#fff, 20);
+    }
+  }
+}

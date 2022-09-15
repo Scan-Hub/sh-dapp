@@ -1,0 +1,117 @@
+.ReactModalPortal > * {
+  // When the modal is closed, overlay div has no css class
+  // This selector should be overridden by the `&--after-open` class below
+  opacity: 0;
+}
+
+.ReactModal__Overlay {
+  transition: opacity 300ms ease-in-out;
+
+  &--after-open {
+    opacity: 1;
+  }
+
+  &--before-close {
+    opacity: 0;
+  }
+
+}
+.ReactModal__Content{
+  border: none !important;
+}
+.overlay-lur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000bf;
+  z-index: 999;
+}
+
+.modal-sh .header-modal {
+  position: relative;
+}
+
+.modal-sh .header {
+  @apply flex flex-row flex-1 items-center justify-between
+}
+
+.modal-sh .header h2 {
+  @apply font-poppins_medium text-grey-1 text-3xl
+}
+
+.modal-sh .header-modal h2 {
+
+  width: 100%;
+  padding: 10px 0px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: 700;
+
+}
+
+.modal-sh .hr{
+  width: 190px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #343247;
+  margin-bottom: 20px;
+}
+
+.modal-sh .desc {
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+
+}
+
+.modal-sh .header-modal .btn-modal-close {
+  background: url("../images/modal/ic_close.svg") no-repeat center center;
+  background-size: 100% 100%;
+  width: 22px;
+  height: 22px;
+  border: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.modal-sh .content-modal {
+  color: #ffffff;
+}
+
+.modal-sh .footer-modal {
+  position: relative;
+  // min-height: 5rem;
+}
+
+.sh-modal-overlay {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-sh {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+}
+.bg-modal-apply{
+  background-image: url(../images/profile/bg-modal-apply.png);
+}

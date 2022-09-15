@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./animation.scss";
+@import "./modal.scss";
+@import "./toastify.scss";
+@import "./lauchpad.scss";
+@import "./report.scss";
+@import "./project.scss";
+@import "./generic.scss";
+@import "./button.scss";
+@import "./form.scss";
+@import "./pagination.scss";
+@import "./cssanimation.scss";
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Poppins"),
+    url("https://fonts.cdnfonts.com/s/16009/Poppins-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Poppins-Light"),
+    url(../fonts/poppins/Poppins-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Poppins-Medium"),
+    url(../fonts/poppins/Poppins-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Poppins-SemiBold"),
+    url(../fonts/poppins/Poppins-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  font-style: bold;
+  font-weight: 700;
+  src: local("Poppins-Bold"),
+    url(../fonts/poppins/Poppins-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat"),
+    url(../fonts/montserrat/Montserrat.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"),
+    url(../fonts/montserrat/Montserrat-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-SemiBold"),
+    url(../fonts/montserrat/Montserrat-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-style: bold;
+  font-weight: 700;
+  src: local("Montserrat-Bold"),
+    url(../fonts/montserrat/Montserrat-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Elemental-End";
+  font-style: bold;
+  font-weight: 700;
+  src: local("Elemental-End"),
+    url(../fonts/elementalend/Elemental-End.woff2) format("woff2");
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+}
+
+body {
+  margin: 0;
+  // font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', 'Roboto', 'Oxygen',
+  //   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  //   sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  font-size: .875rem;
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: .875rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: .875rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: .75rem;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.row {
+  @apply flex flex-row
+}
+
+.col {
+  @apply flex flex-col
+}
+
+.full-col {
+  @apply col flex-1
+}
+
+.row-center {
+  @apply row items-center
+}
+
+.col-y-center {
+  @apply col justify-center
+}
+
+.col-x-center {
+  @apply col items-center
+}
+
+.col-center {
+  @apply col justify-center items-center
+}
+
+.full-col-y-center {
+  @apply full-col justify-center
+}
+
+.full-row-center {
+  @apply row flex-1 items-center
+}
+
+.full-row-between-center {
+  @apply full-row-center justify-between
+}
+
+.full-row-center-center {
+  @apply full-row-center justify-center
+}
+
+.bg-gradient-custom {
+  @apply bg-gradient-to-r from-blue-900 to-blue-500 text-white;
+}
+
+
+#main-app {
+  min-height: 100%;
+  background-color: #0d0f20;
+  padding-top: 62.2px;
+}
+
+.btn-oval {
+  border-radius: 50px;
+  font-weight: normal;
+  padding: 6px 16px;
+  color: #fff;
+  background-color: #00AF71;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+}

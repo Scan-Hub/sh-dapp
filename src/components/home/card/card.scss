@@ -1,0 +1,16 @@
+.sh_card {
+  &.light {
+    .body {
+      background-color: #191b2a;
+      padding: 1rem;
+
+      .title {
+        -webkit-line-clamp: 3;
+      }
+    }
+
+    .social_media {
+      margin-top: 1rem;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.sh_news_item {
+  &.light {
+    .body {
+      background-color: #191b2a;
+      padding: 1rem;
+
+      .title {
+        -webkit-line-clamp: 3;
+      }
+    }
+
+    .social_media {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.social_media {
+  img {
+    max-width: 22px;
+    max-height: 20px;
+  }
+}

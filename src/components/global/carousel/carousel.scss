@@ -1,0 +1,7 @@
+.carousel {
+  .swiper-container-horizontal {
+    & > .swiper-pagination-bullets {
+      bottom: 0 !important;
+    }
+  }
+}

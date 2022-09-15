@@ -1,0 +1,125 @@
+/* text--regular */
+.text--regular {
+  //styleName: Regular/Base 16px|24px;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+}
+
+/* text--small */
+.text--sm {
+  //styleName: Regular/SM 14px|20px;
+  @extend.text--regular;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text--regular-xs {
+  @extend.text--regular;
+  //styleName: Regular/XS 12px|16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+/* text--semibold */
+
+.text--semibold {
+  //styleName: Semibold/Base 16px|24px;
+  font-family: "Montserrat-SemiBold";
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+}
+
+.text--semibold-3xl {
+  //styleName: Semibold/3XL 30px|36px;
+  @extend.text--semibold;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text--semibold-2xl {
+  //styleName: Semibold/2XL 24px|28px;
+  @extend.text--semibold;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+
+.text--semibold-xl {
+  //styleName: Semibold/XL 20px|28px;
+  @extend.text--semibold;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text--semibold-lg {
+  @extend.text--semibold;
+  //styleName: Semibold/LG 18px|28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text--semibold-sm {
+  @extend.text--semibold;
+  //styleName: Semibold/SM 14px|20px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text--semibold-xs {
+  @extend.text--semibold;
+  //styleName: Semibold/XS 12px|16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+/* text--bold */
+.text--bold {
+  //styleName: Bold/Base 16px|24px;
+  font-family: "Montserrat-Bold";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+}
+
+.text--bold-sm {
+  //styleName: Bold/SM 14px|20px;
+  @extend.text--bold;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text--bold-xl {
+  //styleName: Semibold/XL 20px|28px;
+  @extend.text--bold;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+/* text--overflow */
+.text--overflow {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &.two_lines {
+    white-space: unset;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.text__lg {
+  @apply sm:text-lg text-base font-montserrat_bold font-semibold;
+}
+
+.divider {
+  width: 100%;
+  border: 0.5px solid rgba(248, 244, 244, 0.2);
+}
